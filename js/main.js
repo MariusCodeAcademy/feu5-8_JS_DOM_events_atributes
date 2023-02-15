@@ -43,3 +43,20 @@ for (let i = 0; i < allLis.length; i++) {
   const oneLiEl = allLis[i];
   oneLiEl.style.background = 'green';
 }
+
+// document.querySelector('css selectorius');
+// grazins konkretu 1 elementa ne kolecija
+// jei yra daugiau nei vienas jis grazins pirma
+
+const listElQselector = document.querySelector('.list');
+console.log('listElQselector ===', listElQselector);
+
+const lisQselector = document.querySelectorAll('.listEl');
+console.log(lisQselector);
+
+// <p id="art__date">Date</p>
+// nudazyti spalva melynai
+
+// <p id="art__text">Lorem ipsum dolor</p>
+// nudazyti fona geltonai
+// tekta padaryti didziosiom raidem su javascript, ne su css
