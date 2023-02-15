@@ -49,4 +49,24 @@ firstEl.style.color = 'orange';
 // 2. uzdeti padding top saraso elementui 50px
 pradzia.parentElement.style.paddingTop = '50px';
 // 3. div elementui kuriame yra ul fono spalva yellow
+const divEl = pradzia.parentElement.parentElement;
+divEl.style.background = 'yellow';
 // 4. istrinti div elementa su element.remove()
+
+function deleteDiv() {
+  console.log('deleteDiv fn ran');
+  divEl.remove();
+}
+
+// nusitaikau i mygtuka
+let btnDelEl = document.getElementById('delBtn');
+// uzdeti paprasta funkcijos ivykdyma
+btnDelEl.onclick = deleteDiv;
+
+console.log('deleteDiv ===', deleteDiv);
+
+// btnDelEl.onclick = function () {
+//   divEl.remove();
+// };
+
+// btnDelEl.onmouseleave = deleteDiv;
