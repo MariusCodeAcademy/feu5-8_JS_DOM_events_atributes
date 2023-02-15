@@ -35,3 +35,18 @@ artChildren[2].style.backgroundColor = 'yellow';
 // nuo pDate element pasiekti paskutini list elementa
 pDate.parentElement.previousElementSibling.firstElementChild.lastElementChild.style.color =
   'green';
+
+// mini task
+
+// nusitaikyti i <li id="lastLi" class="listEl">three</li>
+const pradzia = document.getElementById('lastLi');
+console.log('pradzia ===', pradzia);
+// traversig budu
+// 1. nudazyti spalva pirmam li elentui
+const firstEl = pradzia.previousElementSibling.previousElementSibling;
+console.log('firstEl ===', firstEl);
+firstEl.style.color = 'orange';
+// 2. uzdeti padding top saraso elementui 50px
+pradzia.parentElement.style.paddingTop = '50px';
+// 3. div elementui kuriame yra ul fono spalva yellow
+// 4. istrinti div elementa su element.remove()
