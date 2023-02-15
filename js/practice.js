@@ -18,3 +18,20 @@ console.log('pElText ===', pElText);
 
 const liNodeListColors = document.querySelectorAll('.colors li');
 console.log('liNodeListColors ===', liNodeListColors);
+
+for (let i = 0; i < liNodeListColors.length; i++) {
+  let liEl = liNodeListColors[i];
+  console.log(liEl.textContent);
+}
+
+// 5. nusitaikyti ir pakeisti teksta <p id="art__date">Date</p> i siandienos data
+
+let pDate = document.getElementById('art__date');
+console.log('pDate ===', pDate);
+pDate.textContent = 'siandienos data';
+
+const now = new Date();
+const dateInLtFormat = now.toLocaleString('lt-LT', { dateStyle: 'full' });
+console.log('now ===', dateInLtFormat);
+
+pDate.textContent = dateInLtFormat;
