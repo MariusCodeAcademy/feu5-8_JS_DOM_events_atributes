@@ -24,4 +24,17 @@ susikuriam practice.js
 10. paimti visas colors elemento spalvas is li teksto, surasyti i viena stringa ir iterpti kaip paskutini li elementa su visu spalvu sarasu atskirtu kableliais
 
 11. <button id="onOff">turn the dark mode off</button> paspaudus mygtuka jis keicia savo teksto zodeli off i on ir atvirksciai
+
+
+*/
+
+/* 
+Ciklai, kurimas
+
+1. sukurti masyva is 4 skirtigu spalvu. Is to masyvo sugeneruoti li elementus ir sudeti juos i colors sarasa htmle.
+
+2. sukurti cikla kuris dides nuo 4 iki 10. ciklo metu kurti li elementus su reiksme "index 4", "index 5", "index 6" ir t.t. ir talpinti juos musu skaiciu sarase
+
+
+
 */
