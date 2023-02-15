@@ -56,6 +56,9 @@ console.log(lisQselector);
 
 // <p id="art__date">Date</p>
 // nudazyti spalva melynai
+const pDate = document.getElementById('art__date');
+console.log('pDate ===', pDate);
+pDate.style.color = 'blue';
 
 // <p id="art__text">Lorem ipsum dolor</p>
 // nudazyti fona geltonai
