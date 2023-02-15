@@ -1,6 +1,6 @@
 /* # uzd
 
-susikuriam praktice.js
+susikuriam practice.js
 
 1. pakeisti h1 antrastes texta 'Dynamic Heading' (.textContent = )
 
@@ -8,7 +8,7 @@ susikuriam praktice.js
 
 3. <p id="art__text">Lorem ipsum dolor</p> gauti ir atspausdinti konsolelje sito elemento teksta
 
-4. atvaizduoti konsoleje kolekcija arba nodelist is <ul id="colors" class="list"> elemento li elementu.
+4. atvaizduoti konsoleje kolekcija arba nodelist is <ul class="colors"> elemento li elementu.
 
 5. nusitaikyti ir pakeisti teksta <p id="art__date">Date</p> i siandienos data
 
@@ -22,4 +22,6 @@ susikuriam praktice.js
 9. (uzsikomentuoti [7] uzd vygdyma) padaryti kad kiekvieno colors saraso li elemento fono spalva butu tokia kaip parasyta li texte
 
 10. paimti visas colors elemento spalvas is li teksto, surasyti i viena stringa ir iterpti kaip paskutini li elementa su visu spalvu sarasu atskirtu kableliais
+
+11. <button id="onOff">turn the dark mode off</button> paspaudus mygtuka jis keicia savo teksto zodeli off i on ir atvirksciai
 */
