@@ -23,7 +23,7 @@ susikuriam practice.js
 
 10. paimti visas colors elemento spalvas is li teksto, surasyti i viena stringa ir iterpti kaip paskutini li elementa su visu spalvu sarasu atskirtu kableliais
 
-11. <button id="onOff">turn the dark mode off</button> paspaudus mygtuka jis keicia savo teksto zodeli off i on ir atvirksciai
+11. <button id="onOff">turn the dark mode off </button> paspaudus mygtuka jis keicia savo teksto zodeli off i on ir atvirksciai
 
 
 */
