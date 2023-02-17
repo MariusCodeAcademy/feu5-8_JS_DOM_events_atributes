@@ -83,3 +83,37 @@ for (let liEl of colorFullLiNodeList) {
   // nudazyti fono spalva
   liEl.style.background = liText;
 }
+
+// 10. paimti visas colors elemento spalvas is li teksto, surasyti i viena stringa ir iterpti kaip paskutini li elementa su visu spalvu sarasu atskirtu kableliais
+
+function makeLastLiSummary() {
+  // colorFullLiNodeList
+  // iki ciklo reikia kaupiancio kintamojo spavoms surasyti
+  let allColorsString = '';
+  // ciklas per masyva
+  for (let i = 0; i < colorFullLiNodeList.length; i++) {
+    let liEl = colorFullLiNodeList[i];
+    // paimti spalvas is li teksto
+    const liText = liEl.textContent;
+    // surasyti i viena stringa
+    // jei tai paskutinis elementas pridedam '.'
+    const lastIterationIndex = colorFullLiNodeList.length - 1;
+    // if (lastIterationIndex === i) {
+    //   allColorsString += liText + '.';
+    //   return allColorsString;
+    // }
+    const commmaOrDot = lastIterationIndex === i ? '.' : ', ';
+    allColorsString += liText + commmaOrDot;
+  }
+  console.log('allColorsString ===', allColorsString);
+  // po ciklo
+  // iterpti kaip paskutini li elementa
+  /// sukurti li el
+  const liEl = document.createElement('li');
+  /// prideti jam texto
+  liEl.textContent = allColorsString;
+  /// patalpinti sarase
+  colorsListEl.append(liEl);
+}
+
+makeLastLiSummary();
