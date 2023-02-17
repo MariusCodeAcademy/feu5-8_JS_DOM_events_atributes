@@ -72,3 +72,14 @@ for (let liEl of colorFullLiNodeList) {
   // liEl.textContent = liEl.textContent + ' added';
   // liEl.textContent += ' added';
 }
+
+// 9. (uzsikomentuoti [8] uzd vygdyma) padaryti kad kiekvieno colors saraso li elemento fono spalva butu tokia kaip parasyta li texte
+
+for (let liEl of colorFullLiNodeList) {
+  // mums reikes:
+  // paimti textine li reiksme
+  let liText = liEl.textContent;
+  console.log('liText ===', liText);
+  // nudazyti fono spalva
+  liEl.style.background = liText;
+}
